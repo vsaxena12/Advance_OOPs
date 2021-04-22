@@ -47,7 +47,7 @@ public class TwoDD {
 		
 		for(int i=0; i<2; i++)//find which rows are associated with which columns
 		{
-			System.out.print("Length of "+i+"th rows: "+newArray[i].length+" ");
+			System.out.println("Length of "+i+"th rows: "+newArray[i].length+" ");
 			//System.out.println();
 		}
 		
