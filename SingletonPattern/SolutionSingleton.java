@@ -11,10 +11,7 @@ class Register {
      * The function accepts MAP itemDetails as parameter.
      */
      
-    private Register()
-    {
-        
-    }
+    private Register() {}
     
     public static synchronized Register getInstance()
     {
