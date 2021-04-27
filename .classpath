@@ -5,6 +5,7 @@
 	<classpathentry kind="src" path="MultipleInheritence"/>
 	<classpathentry kind="src" path="SingletonPattern"/>
 	<classpathentry kind="src" path="StringManipulation"/>
+	<classpathentry kind="src" path="FileStreamJava"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
