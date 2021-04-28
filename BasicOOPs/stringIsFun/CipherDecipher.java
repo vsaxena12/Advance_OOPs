@@ -7,6 +7,7 @@ public class CipherDecipher
 	 * 2. Reverse the String
 	 * 3. Replace the String spaces with *
 	 * 4. Replace the Characters in even positions with their ASCII position
+	 * 5. Append 3 at the end of the string
 	 */
 	
 	
