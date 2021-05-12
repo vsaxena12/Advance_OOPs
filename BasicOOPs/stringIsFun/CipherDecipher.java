@@ -10,6 +10,7 @@ public class CipherDecipher
 	 * 5. Append 3 at the end of the string
 	 */
 	
+	//welcome to hackerrank
 	
 	public String cipher(String normal)
 	{
@@ -55,18 +56,46 @@ public class CipherDecipher
 	public String decipher(String ciphered)
 	{
         String newCiphered = null;
+        
 		if ((ciphered != null) && (ciphered.length() > 0)) {
 			newCiphered = ciphered.substring(0, ciphered.length() - 1);
 		}
 		
-		StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < newCiphered.length(); i++) {
-            System.out.println(newCiphered.charAt(i));
-        }
+		char[] chars = newCiphered.toCharArray();
 		
-        
-        
-		return ciphered;
+	    StringBuilder sb = new StringBuilder(newCiphered);
+	    int j = 0;
+	    int num = 0;
+	    
+	    for(int i=0; i<sb.length(); i++)
+	    {
+	    
+	    	//System.out.println("Print: 1 "+sb.charAt(i));
+	    	
+	    	if(Character.isDigit(sb.charAt(i)))
+	    	{
+	    		 StringBuilder subString = new StringBuilder();
+	    		 subString = subString.append(sb.charAt(i));
+	    		 
+	    		 num = num * 10 + Integer.parseInt(subString.toString()); 
+	    		 
+	    		 //System.out.print("SubString Value: "+num);
+	    		
+	    		 if(num >= 32 && num <= 122)
+	    		 {
+	    			 char ch = (char)num;
+	    			 System.out.print("Print: "+ch); 
+	    			 num = 0;
+	    		 }
+	    		 System.out.println(); 
+	        	 
+	    		
+	    		
+	    	}
+	    }
+	    
+		
+		return newCiphered;
 	}
 	
 	
